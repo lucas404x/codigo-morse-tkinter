@@ -24,9 +24,14 @@ def descriptografar(palavra):
         for letra in palavra:
 
             for k, v in alfabeto.items():
-                if v == letra or letra == '/':
-                    nova_palavra.append(f'{k} ')
+                
+                if v == letra:
+                    nova_palavra.append(f'{k}')
                     break
+
+                elif letra == "/":
+                	nova_palavra.append(" ")
+                	break
         
         return nova_palavra
 

@@ -48,6 +48,6 @@ class Main:
 		messagebox.showinfo('Resultado', "".join(msg))
 
 	def descriptografia(self):
-		msg = func.descriptografar(entrada_texto.get().split('/'))
+		msg = func.descriptografar(entrada_texto.get().split(' '))
 		print(msg)
 		messagebox.showinfo('Resultado', "".join(msg))
