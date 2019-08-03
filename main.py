@@ -20,8 +20,8 @@ class Main:
 		
 		#Labels e buttons
 
-		imagem_samuel = PhotoImage(file = 'c:/Users/Lucas/Documents/Python Scripts/codigo morse/imagens/samuel_morse.png')
-		img_home = Label(cabecalho, image = imagem_samuel)
+		#imagem_samuel = PhotoImage(file = 'c:/Users/Lucas/Documents/Python Scripts/codigo morse/imagens/samuel_morse.png')
+		#img_home = Label(cabecalho, image = imagem_samuel)
 		titulo = Label(cabecalho, text = "Conversor de código Morse", 
 			font = ("Arial", 14, "bold"), foreground = '#7E9BA4')
 		
@@ -33,7 +33,7 @@ class Main:
 
 		#empacotamento
 		cabecalho.pack()
-		img_home.pack()
+		#img_home.pack()
 		titulo.pack()
 		conteudo.pack()
 		texto.pack()

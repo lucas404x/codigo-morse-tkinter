@@ -1,8 +1,11 @@
 import json
+import os
+
+
 
 def criptografar(palavra):
 
-    with open('/Users/Lucas/Documents/Python Scripts/codigo morse/funcoes/alfabeto_morse.json') as file:
+    with open(os.path.join(os.path.abspath( 'funcoes'), 'alfabeto_morse.json')) as file:
         alfabeto = json.loads(file.read())
         nova_palavra = []
 
@@ -17,7 +20,7 @@ def criptografar(palavra):
 
 def descriptografar(palavra):
 
-    with open('/Users/Lucas/Documents/Python Scripts/codigo morse/funcoes/alfabeto_morse.json') as file:
+    with open(os.path.join(os.path.abspath( 'funcoes'), 'alfabeto_morse.json')) as file:
         alfabeto = json.loads(file.read())
         nova_palavra = []
 
